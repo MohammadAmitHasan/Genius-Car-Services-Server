@@ -112,6 +112,9 @@ async function run() {
 }
 run().catch(console.dir)
 
+app.get('/hasan', (req, res) => {
+  res.send('I am Muhammad Hasan, A MERN stack developer.')
+})
 
 app.get('/', (req, res) => {
   res.send('Server is Running');
